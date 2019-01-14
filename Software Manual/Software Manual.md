@@ -10,8 +10,7 @@
 in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
 usually will need to be run one time for each computer.
 
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
+**Input:** There are no inputs needed for this routine.
 
 **Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
 computer being queried.
@@ -35,6 +34,20 @@ decimal version of the same value. The number of decimal digits that can be repr
 end of the second value).
 
 **Implementation/Code:** The following is the code for smaceps()
+
+    float smaceps() {
+
+	float one = 1.0;
+	float seps = 1.0;
+	float appone = one + seps;
+
+	while (abs(appone - one) != 0.0f) {
+		seps = seps / 2.0f;
+		appone = one + seps;
+	}
+
+	return seps;
+    }
 
       subroutine smaceps(seps, ipow)
     c
