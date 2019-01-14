@@ -37,16 +37,16 @@ end of the second value).
 
     float smaceps() {
 
-	float one = 1.0;
-	float seps = 1.0;
-	float appone = one + seps;
+		float one = 1.0;
+		float seps = 1.0;
+		float appone = one + seps;
 
-	while (abs(appone - one) != 0.0f) {
-		seps = seps / 2.0f;
-		appone = one + seps;
-	}
+		while (abs(appone - one) != 0.0f) {
+			seps = seps / 2.0f;
+			appone = one + seps;
+		}
 
-	return seps;
+		return seps;
     }
 
       subroutine smaceps(seps, ipow)
