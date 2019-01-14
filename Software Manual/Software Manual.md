@@ -36,8 +36,7 @@ end of the second value).
 **Implementation/Code:** The following is the code for smaceps()
 
     float smaceps() {
-    
-    		\\Set up storage for the algorithm and initialize
+    	\\Set up storage for the algorithm and initialize
 		\\variables to compute the machine value near 1.0
 
 		float one = 1.0;
