@@ -1,8 +1,12 @@
 # Math 5610 Computational Linear Algebra
 
-Completed Homework Tasks
+## Software Manual
 
-## Homework 1
+##### [Table of Contents](https://brandonfurman.github.io/math5610/SoftwareManual/SoftwareManualTableOfContents)
+
+## Completed Homework Tasks
+
+### Homework 1
 
 1. [Task 1](https://BrandonFurman.github.io/math5610/homework/task1.html)
 2. [Task 2](https://brandonfurman.github.io/math5610/homework/homework1/task2/task2)
@@ -11,4 +15,7 @@ Completed Homework Tasks
 5. [Task 5](https://brandonfurman.github.io/math5610/homework/homework1/task5/task5)
 
 
-## Homework 2
+### Homework 2
+
+1. Task 1 has been completed by virtue of this being seen.
+2. [Task 2]()

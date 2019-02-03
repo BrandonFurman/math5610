@@ -9,17 +9,17 @@
 
 ### Vector Operations
 
-* [emptyVec]
-* [randVec]
+* [emptyVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/emptyVec)
+* [randVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/randVec)
 * [addVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/addVec)
-* [subVec]
-* [scaleVec]
-* [oneNormVec]
-* [twoNormVec]
-* [infNormVec]
-* [absErrVecOneNorm]
-* [absErrVecTwoNorm]
-* [absErrVecInfNorm]
+* [subVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/subVec)
+* [scaleVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/scaleVec)
+* [oneNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/oneNormVec)
+* [twoNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/twoNormVec)
+* [infNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/infNormVec)
+* [absErrVecOneNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecOneNorm)
+* [absErrVecTwoNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecTwoNorm)
+* [absErrVecInfNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecInfNorm)
 
 
 ### Matrix Operations
