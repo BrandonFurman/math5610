@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** infNormVec
 
 **Author:** Brandon Furman
 
@@ -14,6 +14,26 @@
 
 **Usage/Example:**
 
-**Implementation/Code:** 
+**Implementation/Code:**
+
+```cpp
+double infNormVec(array1D vec) {
+
+	int n = vec.getLength();
+
+	double vi = 0.0;
+	double max = abs(vec(0));
+
+	for (int i = 0; i < n; i++) {
+		
+		vi = abs(vec(i));
+
+		if (vi > max) max = vi;
+
+	}
+
+	return max;
+}
+```
 
 **Last Modified:** February/2019

@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** 
 
 **Author:** Brandon Furman
 

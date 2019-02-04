@@ -32,7 +32,7 @@ outputs the following to console:
 0.808741 0.585009 0.479873
 ```
 
-**Implementation/Code:**
+**Implementation/Code:** The following is the code for randMat(int m, int n):
 
 ```cpp
 array2D randMat(int m, int n) {

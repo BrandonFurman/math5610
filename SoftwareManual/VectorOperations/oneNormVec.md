@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** oneNormVec
 
 **Author:** Brandon Furman
 
@@ -14,6 +14,23 @@
 
 **Usage/Example:**
 
-**Implementation/Code:** 
+**Implementation/Code:**
+
+```cpp
+double oneNormVec(array1D vec) {
+
+	int n = vec.getLength();
+
+	double sum = 0.0;
+
+	for (int i = 0; i < n; i++) {
+
+		sum += abs(vec(i));
+
+	}
+
+	return sum;
+}
+```
 
 **Last Modified:** February/2019

@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** twoNormVec
 
 **Author:** Brandon Furman
 
@@ -14,6 +14,28 @@
 
 **Usage/Example:**
 
-**Implementation/Code:** 
+**Implementation/Code:**
+
+```cpp
+double twoNormVec(array1D vec) {
+
+	int n = vec.getLength();
+
+	double vi = 0.0;
+	double sum = 0.0;
+
+	for (int i = 0; i < n; i++) {
+
+		vi = vec(i);
+
+		sum += vi * vi;
+
+	}
+
+	sum = sqrt(sum);
+
+	return sum;
+}
+```
 
 **Last Modified:** February/2019

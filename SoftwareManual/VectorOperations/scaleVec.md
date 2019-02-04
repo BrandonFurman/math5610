@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** scaleVec
 
 **Author:** Brandon Furman
 
@@ -14,6 +14,23 @@
 
 **Usage/Example:**
 
-**Implementation/Code:** 
+**Implementation/Code:**
+
+```cpp
+array1D scaleVec(double c, array1D& vec) {
+
+	int l = vec.getLength();
+
+	array1D nVec;
+
+	nVec = emptyVec(l);
+
+	for (int i = 0; i < l; i++) {
+		nVec(i) = c*vec(i);
+	}
+
+	return nVec;
+}
+```
 
 **Last Modified:** February/2019
