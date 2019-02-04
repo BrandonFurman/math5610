@@ -4,10 +4,10 @@
 
 ### Data Structures
 
-* [array1D]
-* [array2D]
+* [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D)
+* [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D)
 
-### Vector Operations
+### Vector Routines
 
 * [emptyVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/emptyVec)
 * [randVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/randVec)
@@ -22,21 +22,23 @@
 * [absErrVecInfNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecInfNorm)
 
 
-### Matrix Operations
+### Matrix Routines
 
-* [emptyMat]
-* [randMat]
-* [randSymMat]
-* [scaleMat]
-* [addMat]
-* [subMat]
-* [multMat]
-* [oneNormMat]
-* [infNormMat]
+* [emptyMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/emptyMat)
+* [randMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randMat)
+* [randSymMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randSymMat)
+* [scaleMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/scaleMat)
+* [addMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/addMat)
+* [subMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/subMat)
+* [multMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/multMat)
+* [oneNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/oneNormMat)
+* [infNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/infNormMat)
+
+### Solver Routines
 
 ### Other Routines
 
-* [smaceps](https://brandonfurman.github.io/math5610/homework/homework1/task1/smaceps)
-* [dmaceps](https://brandonfurman.github.io/math5610/homework/homework1/task1/dmaceps)
-* [absErr]
-* [relErr]
+* [smaceps](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/smaceps)
+* [dmaceps](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/dmaceps)
+* [absErr](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/absErr)
+* [relErr](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/relErr)
