@@ -1,5 +1,3 @@
-# Math 5610 Computational Linear Algebra Software Manual
-
 ## Table of Contents
 
 ### Data Structures

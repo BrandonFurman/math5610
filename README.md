@@ -1,8 +1,6 @@
-# Math 5610 Computational Linear Algebra
-
 ## Software Manual
 
-##### [Table of Contents](https://brandonfurman.github.io/math5610/SoftwareManual/SoftwareManualTableOfContents)
+#### [Table of Contents](https://brandonfurman.github.io/math5610/SoftwareManual/SoftwareManualTableOfContents)
 
 ## Completed Homework Tasks
 
