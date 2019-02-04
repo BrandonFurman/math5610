@@ -32,7 +32,14 @@
 
 ### Homework 3
 
-1. Task 1 was to
+1. Task 1 was to create a routine that returns the absolute error between two vectors when the 2-norm is used. This routine is detailed in the [absErrVecTwoNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecTwoNorm) entry of the software manual.
+2. Task 2 was to create a routine that returns the absolute error between two vectors when the 1-norm is used. This routine is detailed in the [absErrVecOneNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecOneNorm) entry of the software manual.
+3. Task 3 was to create a routine that returns the absolute error between two vectors when the infinity-norm is used. This routine is detailed in the [absErrVecInfNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecInfNorm) entry of the software manual.
+4. Task 4 was to create a routine that returns the one-norm of a given square matrix. This routine is detailed in the [oneNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/oneNormMat) entry of the software manual.
+5. Task 5 was to create a routine that returns the infinity-norm of a given square matrix. This routine is detailed in the [infNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/infNormMat) entry of the software manual.
+6. Task 6 was to create a routine that returns the dot product of two vectors of same length. This routine is detailed in the [dotProduct](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/dotProduct) entry of the software manual.
+7. Task 7 was to create a routine that returns the cross product of three vectors of length three. This routine is detailed in the [crossProduct](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/crossProduct) entry of the software manual.
+8. Task 8 was to create a routine that returns the product of two matrices with equal inner dimension. This routine is detailed in the [multMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/multMat) entry of the software manual.
 	
 
 ### Homework 4
