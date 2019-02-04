@@ -28,15 +28,15 @@ outputs the following to the console:
 
 ```cpp
 float smaceps() {
-	\\Set up storage for the algorithm and initialize
-	\\variables to compute the machine value near 1.0
+	//Set up storage for the algorithm and initialize
+	//variables to compute the machine value near 1.0
 
 	float one = 1.0;
 	float seps = 1.0;
 	float appone = one + seps;
 
-	\\Loop, dividing by 2 each time to determine when the difference
-	\\between one and the approximation is zero in single precision
+	//Loop, dividing by 2 each time to determine when the difference
+	//between one and the approximation is zero in single precision
 
 	while (abs(appone - one) != 0.0f) {
 		seps = seps / 2.0f;
