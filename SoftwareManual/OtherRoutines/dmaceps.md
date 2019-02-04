@@ -1,4 +1,4 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
 **Routine Name:** dmaceps
 
@@ -15,12 +15,19 @@ usually will need to be run one time for each computer.
 **Output:** This routine returns a double precision value for the number of decimal digits that can be represented on the
 computer being queried.
 
-**Usage/Example:**
+**Usage/Example:** The routine has no arguments and only outputs the default machine precision in terms of a decimal number. For example, the following code:
+```cpp
+std::cout << dmaceps();
+```
+outputs the following to the console:
+```
+1.11022e-16
+```
 
 **Implementation/Code:** The following is the code for dmaceps()
 
 ```cpp
-float dmaceps() {
+double dmaceps() {
 	//Set up storage for the algorithm and initialize
 	//variables to compute the machine value near 1.0
 
@@ -33,7 +40,7 @@ float dmaceps() {
 
 	while (abs(appone - one) != 0.0) {
 		seps = seps / 2.0;
-	appone = one + seps;
+		appone = one + seps;
 	}
 
 	return seps;
