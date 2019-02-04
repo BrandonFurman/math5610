@@ -11,7 +11,7 @@
 3. Task 3 was to create this web page. 
 4. Task 4 was to create a folder for the software manual.
 5. Task 5 was to create a table of contents for the software manual. It can be found [here](https://brandonfurman.github.io/math5610/SoftwareManual/SoftwareManualTableOfContents).
-6. Task 6 was to create a shared library containing the routines created in Task 1. It can be found [here]().
+6. Task 6 was to create a shared library containing the routines created in Task 1. It can be found [here](https://github.com/BrandonFurman/math5610/tree/master/homework/homework1/task6).
 7. Task 7 was to use OpenMP to find out how many cores our computers have. The results can be found [here](https://brandonfurman.github.io/math5610/homework/homework1/task7/task7)
 8. Task 8 was to write brief paragraphs on three disasters caused by bad numerical computing. Those paragraphs can be found [here](https://brandonfurman.github.io/math5610/homework/homework1/task8/task8).
 9. Task 9 was to create a routine that returns a random matrix of given size. It is entry [randMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randMat) in the software manual.
