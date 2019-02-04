@@ -19,7 +19,7 @@ computer being queried.
 
 **Implementation/Code:** The following is the code for dmaceps()
 
-```C++
+```cpp
 float dmaceps() {
 	\\Set up storage for the algorithm and initialize
 	\\variables to compute the machine value near 1.0
