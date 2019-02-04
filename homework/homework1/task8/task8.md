@@ -1,0 +1,3 @@
+##The Patriot Missile Failure
+
+During the gulf war an American patriot missile failed to intercept an incoming Iraqi Scud missile. The failure was caused by truncation errors in the system's clock. The system's clock measured time since boot in tenths of a second. This value was multiplied by the binary expansion of 1/10 to yield the number of seconds since boot. Because this calculation was limited to 24 bits of precision, after 100 hours the internal clock was off by more than 0.34 seconds.
