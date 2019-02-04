@@ -6,7 +6,7 @@
 
 **Language:** C++
 
-**Description/Purpose:** This code defines a new class called "array2D". This class is designed to be matrix-like, and uses a syntax similar to MATLAB. Memory for a matrix is allocated and deallocated dynamically with little input required from the user.
+**Description/Purpose:** This code defines a new class called "array2D". This class is designed to be matrix-like, and uses a syntax similar to MATLAB. Memory for a matrix is contiguous and allocated/deallocated dynamically with little input required from the user.
 
 **Usage/Example:** An object is created with
 
@@ -30,9 +30,9 @@ mat(0,1) = 1.5;
 std::cout << mat(0,1);
 ```
 outputs the following to the console:
-`
+```
 1.5
-`
+```
 The only other member functions that should be explicitly called are getRows() and getCols(). These two functions allow access to the number of rows and columns in the matrix.
 
 **Implementation/Code:**
