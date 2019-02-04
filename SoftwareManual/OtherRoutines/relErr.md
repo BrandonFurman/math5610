@@ -1,6 +1,6 @@
 # Math 5610 Computational Linear Algebra Software Manual
 
-**Routine Name:**
+**Routine Name:** relErr
 
 **Author:** Brandon Furman
 
@@ -14,6 +14,14 @@
 
 **Usage/Example:**
 
-**Implementation/Code:** 
+**Implementation/Code:**
+
+```cpp
+double relErr(double x, double y) {
+
+	return abs((y - x)/x);
+
+}
+```
 
 **Last Modified:** February/2019

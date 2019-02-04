@@ -27,7 +27,7 @@
 6. Task 6 was to create a routine that returns the 2-norm of a given vector. This routine is detailed in the [twoNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/twoNormVec) entry in the software manual.
 7. Task 7 was to create a routine that returns the 1-norm of a given vector. This routine is detailed in the [oneNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/oneNormVec) entry in the software manual.
 8. Task 8 was to create a routine that returns the infinity-norm of a given vector. This routine is detailed in the [infNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/infNormVec) entry in the software manual.
-
+9. Task 9 was to create a routine that returns a random symmetric matrix. This routine is detailed in the [infNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randSymMat) entry in the software manual.
 
 ### Homework 3
 

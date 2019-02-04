@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** absErr
 
 **Author:** Brandon Furman
 
@@ -15,5 +15,13 @@
 **Usage/Example:**
 
 **Implementation/Code:** 
+
+```cpp
+double absErr(double x, double y) {
+
+	return abs(y - x);
+
+}
+```
 
 **Last Modified:** February/2019
