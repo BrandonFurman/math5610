@@ -19,6 +19,7 @@ computer being queried.
 
 **Implementation/Code:** The following is the code for dmaceps()
 
+```C++
     float dmaceps() {
     	\\Set up storage for the algorithm and initialize
 		\\variables to compute the machine value near 1.0
@@ -37,5 +38,6 @@ computer being queried.
 
 		return seps;
     }
+```
 
 **Last Modified:** January/2019
