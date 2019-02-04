@@ -21,15 +21,15 @@ computer being queried.
 
 ```cpp
 float dmaceps() {
-	\\Set up storage for the algorithm and initialize
-	\\variables to compute the machine value near 1.0
+	//Set up storage for the algorithm and initialize
+	//variables to compute the machine value near 1.0
 
 	double one = 1.0;
 	double seps = 1.0;
 	double appone = one + seps;
 
-	\\Loop, dividing by 2 each time to determine when the difference
-	\\between one and the approximation is zero in single precision
+	//Loop, dividing by 2 each time to determine when the difference
+	//between one and the approximation is zero in single precision
 
 	while (abs(appone - one) != 0.0) {
 		seps = seps / 2.0;
