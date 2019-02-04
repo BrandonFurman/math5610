@@ -1,4 +1,4 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
 **Class Name:** array2D
 
