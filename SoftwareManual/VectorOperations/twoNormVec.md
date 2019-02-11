@@ -12,14 +12,13 @@
 
 **Output:** This function returns a double-precision number that is equal to the 2-norm of the input.
 
-**Usage/Example:** Usage is straightforward. The following code:
+**Usage/Example:** Usage of this function is straightforward. For example, the following code:
 
 ```cpp
 double twoNorm;
 array1D vec;
 
 vec = emptyVec(3);
-
 vec(0) = 1; vec(1) = 2; vec(2) = 3;
 
 twoNorm = twoNormVec(vec);
