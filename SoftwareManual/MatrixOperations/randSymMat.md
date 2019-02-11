@@ -12,10 +12,9 @@
 
 **Output:** This function returns a symmetric matrix, in the form of an array2D object, whose entries have been set to random values between 0 and 1.
 
-**Usage/Example:** This function is used like so:
+**Usage/Example:** Usage of this function is straightforward. The following code
 
 ```cpp
-
 int m,n;
 array2D mat;
 
