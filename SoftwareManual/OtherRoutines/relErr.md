@@ -29,6 +29,9 @@ e = relErr(y,x);
 std::cout << e;
 ```
 outputs the following to the console:
+```
+
+```
 
 **Implementation/Code:**
 

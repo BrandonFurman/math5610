@@ -21,7 +21,7 @@
 
 1. Task 1 has been completed by virtue of this being seen.
 2. Task 2 was to create a routine that returns the absolute error between two numbers. This routine is detailed in the [absErr](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/absErr) entry of the software manual.
-3. Task 3 was to create a routine that returns the relative error between two numbers. This routine is detailed in the [relErr](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/absErr) entry of the software manual.
+3. Task 3 was to create a routine that returns the relative error between two numbers. This routine is detailed in the [relErr](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/relErr) entry of the software manual.
 4. Task 4 was to create a routine to add two vectors of the same length. This routine is detailed in the [addVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/addVec) entry of the software manual.
 5. Task 5 was to create a routine to multiply a vector by a scalar. This routine is detailed in the [scaleVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/scaleVec) entry of the software manual.
 6. Task 6 was to create a routine that returns the 2-norm of a given vector. This routine is detailed in the [twoNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/twoNormVec) entry of the software manual.
