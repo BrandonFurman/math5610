@@ -1,4 +1,4 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
 **Routine Name:** relErr
 
@@ -6,13 +6,29 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** This routine computes and returns the relative error in the approximation of a number x by another number y.
 
-**Input:**
+**Input:** This routine accepts two double-precision numbers at inputs. The first input, x, is considered the true value, and the second input, y, is considered the approximate value.
 
-**Output:**
+**Output:** This routine returns a double-precision number that is the relative error between the first input and second input.
 
-**Usage/Example:**
+**Usage/Example:** Usage of this routine is straightforward. The only The output of this routine is dependent on the order th
+
+```cpp
+double x,y,e;
+
+x = 2.8;
+y = 1.5;
+
+e = relErr(x,y);
+
+std::cout << e;
+
+e = relErr(y,x);
+
+std::cout << e;
+```
+outputs the following to the console:
 
 **Implementation/Code:**
 
