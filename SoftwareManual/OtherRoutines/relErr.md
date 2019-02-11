@@ -12,7 +12,7 @@
 
 **Output:** This routine returns a double-precision number that is the relative error between the first input and second input.
 
-**Usage/Example:** Usage of this routine is straightforward. The only The output of this routine is dependent on the order th
+**Usage/Example:** Usage of this routine is straightforward. The only consideration is that the order of the inputs matters. The following code:
 
 ```cpp
 double x,y,e;
@@ -22,7 +22,7 @@ y = 1.5;
 
 e = relErr(x,y);
 
-std::cout << e;
+std::cout << e << std::endl;
 
 e = relErr(y,x);
 
@@ -30,7 +30,8 @@ std::cout << e;
 ```
 outputs the following to the console:
 ```
-
+0.464286
+0.866667
 ```
 
 **Implementation/Code:**
