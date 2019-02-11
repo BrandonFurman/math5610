@@ -25,8 +25,8 @@ vec(0) = 1; vec(1) = 2; vec(2) = 3;
 vec = scaleVec(c,vec);
 
 std::cout << vec(0) << std::endl;
-std::cout << vec(1) << std::endl
-std::cout << vec(2) << std::endl
+std::cout << vec(1) << std::endl;
+std::cout << vec(2) << std::endl;
 ```
 outputs the following to console:
 ```
