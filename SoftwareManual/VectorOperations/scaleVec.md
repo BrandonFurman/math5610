@@ -8,9 +8,9 @@
 
 **Description/Purpose:** This function returns a scalar multiple of a given vector.
 
-**Input:** This function accepts a double-precision number and a array1D object as inputs. The array1D object is passed by reference.
+**Input:** This function accepts a double-precision number and a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as inputs. The array1D object is passed by reference.
 
-**Output:** This function returns an array1D object whose elements have been multiplied by the input scalar.
+**Output:** This function returns an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object whose elements have been multiplied by the input scalar.
 
 **Usage/Example:** The first input should be a double precision number and the second input should be an array1D object. Otherwise, usage is straightforward. The following code:
 

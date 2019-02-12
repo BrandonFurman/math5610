@@ -8,9 +8,9 @@
 
 **Description/Purpose:** This routine will add two vectors of the same length element-wise. Suppose the first input is a vector with entries v1 = [1,2,3] and the second input has entries v2 = [4,5,6]. Then this routine returns a vector with entries v3 = [5,7,9]. This routine also checks to ensure that both vectors are of the same length and throws an exception if they are not.
 
-**Input:** This routine accepts two elements of the class "array1D". Both inputs are passed by reference.
+**Input:** This routine accepts two [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) objects. Both inputs are passed by reference.
 
-**Output:** This routine returns an element of the class "array1D" whose entries are the sum of the corresponding entries of the inputs.
+**Output:** This routine returns an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object whose entries are the sum of the corresponding entries of the inputs.
 
 **Usage/Example:** Usage is straight forward. The following code
 ```cpp

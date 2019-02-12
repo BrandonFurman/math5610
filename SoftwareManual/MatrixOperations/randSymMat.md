@@ -1,6 +1,6 @@
-# Math 5610 Computational Linear Algebra Software Manual
+# Software Manual
 
-**Routine Name:**
+**Routine Name:** randSymMat
 
 **Author:** Brandon Furman
 
@@ -10,7 +10,7 @@
 
 **Input:** This function accepts one integer as input. This integer designates both the number of columns and the number of rows.
 
-**Output:** This function returns a symmetric matrix, in the form of an array2D object, whose entries have been set to random values between 0 and 1.
+**Output:** This function returns a symmetric matrix, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object, whose entries have been set to random values between 0 and 1.
 
 **Usage/Example:** Usage of this function is straightforward. The following code
 

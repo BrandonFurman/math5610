@@ -6,7 +6,7 @@
 
 **Language:** C++
 
-**Description/Purpose:** This routine returns a matrix, in the form of an array2D object, whose entries have been randomized. 
+**Description/Purpose:** This routine returns a matrix, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object, whose entries have been randomized. 
 
 **Input:** This routine accepts two integers, *m* and *n*, as inputs. *m* is the number of rows in the matrix and *n* is the number of columns.
 

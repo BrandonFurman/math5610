@@ -8,7 +8,7 @@
 
 **Description/Purpose:** This function computes the 1-norm of an arbitrary vector with real number entries.
 
-**Input:** This function accepts a vector, in the form of an array1D object, as an input. This input is passed by reference.
+**Input:** This function accepts a vector, in the form of an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object, as an input. This input is passed by reference.
 
 **Output:** This function returns a double-precision number that is equal to the 1-norm of the input.
 
