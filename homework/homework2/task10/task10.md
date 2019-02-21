@@ -2,4 +2,4 @@
 
 According to [Wolfram Alpha](http://mathworld.wolfram.com/MatrixNorm.html), a matrix norm is a number associated with a matrix **A** that satisfies three axioms. One, the matrix norm should be nonnegative for any matrix **A**. Two, the norm should be absolutely homogeneous. Three, the norm should satisfy both the additive and multiplicative triangle inequalities.
 
-There are several types of matrix norms, but this discussion is restricted to induced matrix norms. A matrix norm induced by a vector
+There are several types of matrix norms, but this discussion is restricted to induced matrix norms. A matrix norm induced by a vector ... In the OCW MIT lectures on [Dynamic Systems](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-241j-dynamic-systems-and-control-spring-2011/readings/MIT6_241JS11_chap04.pdf), the induced 2-norm is defined. They describe this norm as measuring the "amplification" a matrix **A** provides to vectors.
