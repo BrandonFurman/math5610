@@ -28,7 +28,7 @@
 7. Task 7 was to create a routine that returns the 1-norm of a given vector. This routine is detailed in the [oneNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/oneNormVec) entry of the software manual.
 8. Task 8 was to create a routine that returns the infinity-norm of a given vector. This routine is detailed in the [infNormVec](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/infNormVec) entry of the software manual.
 9. Task 9 was to create a routine that returns a random symmetric matrix. This routine is detailed in the [randSymMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randSymMat) entry of the software manual.
-10. Task 10 was to write a brief summary of induced matrix norms. That summary can be found [here]().
+10. Task 10 was to write a brief summary of induced matrix norms. That summary can be found [here](https://brandonfurman.github.io/math5610/homework/homework2/task10/task10).
 
 ### Homework 3
 
