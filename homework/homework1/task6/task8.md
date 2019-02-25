@@ -1,6 +1,6 @@
 ## Machine Precision Shared Library
 
-A shared library containing code to calculate machine precision can be found [here](). This shared library can be used by compiling using gpp,
+A shared library containing code to calculate machine precision can be found [here](https://github.com/BrandonFurman/math5610/tree/master/homework/homework1/task6). This shared library can be used by compiling using gpp,
 ```
 gpp MachinePrecision.a Code.cpp
 ```
