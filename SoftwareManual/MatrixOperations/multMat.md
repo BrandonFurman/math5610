@@ -20,8 +20,13 @@
 array2D multMat(array2D& mat1, array2D& mat2) {
 
 	int m = mat1.getRows();
-	int n = mat1.getCols();
+	int n1 = mat1.getCols();
+	int n2 = mat2.getRows();
 	int p = mat2.getCols();
+
+	if (n1 != n2) {
+		throw "multMat: Incompatible Matrix Sizes";
+	}
 
 	array2D mat;
 
@@ -31,7 +36,7 @@ array2D multMat(array2D& mat1, array2D& mat2) {
 
 	for (int i = 0; i < m; i++) {
 		for (int j = 0; j < p; j++) {
-			for (int k = 0; k < n; k++) {
+			for (int k = 0; k < n1; k++) {
 				sum = sum + mat1(i,k) * mat2(k,j);
 			}
 			mat(i,j) = sum;
