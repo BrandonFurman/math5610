@@ -4,7 +4,7 @@ A shared library containing code to calculate machine precision can be found [he
 ```
 gpp MachinePrecision.a Code.cpp
 ```
-where Code.cpp is some code containing calls to the functions [smaceps](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/smaceps) or [dmaceps](https://brandonfurman.github.io/math5610/SoftwareManual/OtherRoutines/dmaceps). For instance, the following code
+where Code.cpp is some code containing calls to the functions [smaceps]() or [dmaceps](). For instance, the following code
 ```cpp
 #include <iostream>
 
