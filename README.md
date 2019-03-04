@@ -11,7 +11,7 @@
 3. Task 3 was to create this web page. 
 4. Task 4 was to create a folder for the software manual.
 5. Task 5 was to create a table of contents for the software manual. It can be found [here](https://brandonfurman.github.io/math5610/SoftwareManual/SoftwareManualTableOfContents).
-6. Task 6 was to create a shared library containing the routines created in Task 1. It can be found [here](https://github.com/BrandonFurman/math5610/tree/master/homework/homework1/task6).
+6. Task 6 was to create a shared library containing the routines created in Task 1. It can be found [here](https://brandonfurman.github.io/math5610/homework/homework1/task6/task6).
 7. Task 7 was to use OpenMP to find out how many cores our computers have. The results can be found [here](https://brandonfurman.github.io/math5610/homework/homework1/task7/task7)
 8. Task 8 was to write brief paragraphs on three disasters caused by bad numerical computing. Those paragraphs can be found [here](https://brandonfurman.github.io/math5610/homework/homework1/task8/task8).
 9. Task 9 was to create a routine that returns a random matrix of given size. It is entry [randMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randMat) in the software manual.
@@ -40,6 +40,18 @@
 6. Task 6 was to create a routine that returns the dot product of two vectors of same length. This routine is detailed in the [dotProduct](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/dotProduct) entry of the software manual.
 7. Task 7 was to create a routine that returns the cross product of three vectors of length three. This routine is detailed in the [crossProduct](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/crossProduct) entry of the software manual.
 8. Task 8 was to create a routine that returns the product of two matrices with equal inner dimension. This routine is detailed in the [multMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/multMat) entry of the software manual.
-	
+9. Task 9 was to create a routine that returns a diagonally dominant matrix that has real values in all entries of the matrix. This routine is detailed in the [randDiagDomMat] (https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randDiagDomMat) entry of the software manual.
+10.
 
 ### Homework 4
+
+1. Task 1 was to implement a method that returns the scalar multiple of a given matrix. This method is detailed in the [scaleMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/scaleMat) entry of the software manual.
+2. This method is detailed in the [addMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/addMat) entry of the software manual.
+3. This method is detailed in the [vecOuterProduct](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/vecOuterProduct) entry of the software manual.
+4. This method is detailed in the [diagSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/diagSolver) entry of the software manual.
+5. This method is detailed in the [backSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/backSub) entry of the software manual.
+6. This method is detailed in the [forwardSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/forwardSub) entry of the software manual.
+7. This method is detailed in the [matRowReduction](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/matRowReduction) entry of the software manual.
+8. This method is detailed in the [slowSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/slowSquareSystemSolver) entry of the software manual.
+9. This method is detailed in the [randSymDiagDomMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randSymDiagDomMat) entry of the software manual.
+10.
