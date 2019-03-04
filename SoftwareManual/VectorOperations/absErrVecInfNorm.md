@@ -6,13 +6,29 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** This method returns the absolute error in the approximation of one vector by another when the infinity-norm is used.
 
-**Input:**
+**Input:** The function accepts two vectors, in the form of [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) objects, as inputs. Both inputs are passed by reference.
 
-**Output:**
+**Output:** This function returns a double-precision number that represents the absolute error in the approximation of the first input by the second input.
 
 **Usage/Example:**
+```cpp
+array1D vec1, vec2;
+
+vec1 = emptyVec(3);
+vec1(0) = 5; vec1(1) = 4; vec1(2) = 3;
+vec2 = emptyVec(3);
+vec2(0) = 7; vec2(1) = 8; vec2(2) = 9;
+
+double infNorm = absErrVecInfNorm(vec1, vec2);
+
+std::cout << infNorm;
+```
+outputs the following to console:
+```
+6
+```
 
 **Implementation/Code:** 
 
