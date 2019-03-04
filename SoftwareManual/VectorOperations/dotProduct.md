@@ -16,15 +16,15 @@
 ```cpp
 array1D vec1, vec2;
 
-	vec1 = emptyVec(3);
-	vec1(0) = 1; vec1(1) = 3; vec1(2) = 5;
+vec1 = emptyVec(3);
+vec1(0) = 1; vec1(1) = 3; vec1(2) = 5;
 
-	vec2 = emptyVec(3);
-	vec2(0) = 2; vec2(1) = 4; vec2(2) = 6;
+vec2 = emptyVec(3);
+vec2(0) = 2; vec2(1) = 4; vec2(2) = 6;
 
-	double dotProd = dotProduct(vec1, vec2);
+double dotProd = dotProduct(vec1, vec2);
 
-	std::cout << dotProd;
+std::cout << dotProd;
 ```
 This code results in the following output to the console:
 ```

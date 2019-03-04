@@ -16,24 +16,24 @@
 ```cpp
 array1D vec1, vec2, vec3, vec4;
 
-	vec1 = emptyVec(3);
-	vec1(0) = 1; vec1(1) = 3; vec1(2) = 5;
+vec1 = emptyVec(3);
+vec1(0) = 1; vec1(1) = 3; vec1(2) = 5;
 
-	vec2 = emptyVec(3);
-	vec2(0) = 2; vec2(1) = 4; vec2(2) = 6;
+vec2 = emptyVec(3);
+vec2(0) = 2; vec2(1) = 4; vec2(2) = 6;
 
-	vec3 = crossProduct(vec1, vec2);
-	vec4 = crossProduct(vec2, vec1);
+vec3 = crossProduct(vec1, vec2);
+vec4 = crossProduct(vec2, vec1);
 
-	for (int i = 0; i < 3; i++) {
-		std::cout << vec3(i) << " ";
-	}
+for (int i = 0; i < 3; i++) {
+	std::cout << vec3(i) << " ";
+}
 
-	std::cout << std::endl;
+std::cout << std::endl;
 
-	for (int i = 0; i < 3; i++) {
-		std::cout << vec4(i) << " ";
-	}
+for (int i = 0; i < 3; i++) {
+	std::cout << vec4(i) << " ";
+}
 ```
 This code results in the following output to the console:
 ```
