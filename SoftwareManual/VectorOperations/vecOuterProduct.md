@@ -1,6 +1,6 @@
 # Software Manual
 
-**Routine Name:**
+**Routine Name:** vecOuterProduct
 
 **Author:** Brandon Furman
 
@@ -14,6 +14,10 @@
 
 **Usage/Example:**
 
-**Implementation/Code:** 
+**Implementation/Code:**
 
-**Last Modified:** February/2019
+```cpp
+
+```
+
+**Last Modified:** March/2019
