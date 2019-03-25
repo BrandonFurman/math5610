@@ -12,7 +12,33 @@
 
 **Output:** This function returns a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object with each entry multiplied by the double-precision input.
 
-**Usage/Example:**
+**Usage/Example:** Usage of this function is straightforward. The following code
+```cpp
+int m = 2;
+int n = 2;
+double c = 2.4;
+
+array2D mat1,mat2;
+
+mat1 = emptyMat(m, n);
+
+mat1(0, 0) = 1; mat1(0, 1) = 2;
+mat1(1, 0) = 3; mat1(1, 1) = 4;
+
+mat2 = scaleMat(c,mat1);
+
+for (int i = 0; i < m; i++) {
+	for (int j = 0; j < m; j++) {
+		std::cout << mat2(i, j) << " ";
+	}
+	std::cout << std::endl;
+}
+```
+outputs the following to console
+```
+2.4 4.8
+7.2 9.6
+```
 
 **Implementation/Code:** This function is implemented as follows:
 ```cpp
