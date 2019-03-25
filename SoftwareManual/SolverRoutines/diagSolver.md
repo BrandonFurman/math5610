@@ -6,15 +6,14 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** This function computes the solution to a square linear system of equations where the coefficient matrix is a diagonal matrix.
 
-**Input:**
+**Input:** This function accepts a coefficient matrix, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as inputs. The 
 
-**Output:**
-
+**Output:** This function returns a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the solution to the linear system of equations.
 **Usage/Example:**
 
-**Implementation/Code:**
+**Implementation/Code:** This function is implemented as follows:
 
 ```cpp
 array1D diagSolver(array2D& A, array1D& b) {

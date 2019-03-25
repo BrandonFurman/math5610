@@ -6,15 +6,15 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** This function returns the outer product of two vectors.
 
-**Input:**
+**Input:** This function accepts two [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) objects of equal size as inputs.
 
-**Output:**
+**Output:** This function returns a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the outer product of the inputs.
 
 **Usage/Example:**
 
-**Implementation/Code:**
+**Implementation/Code:** This function is implemented as follows:
 
 ```cpp
 array2D vecOuterProduct(array1D& vec1, array1D& vec2) {
