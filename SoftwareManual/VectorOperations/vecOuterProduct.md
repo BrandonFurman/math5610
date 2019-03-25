@@ -41,11 +41,12 @@ outputs the following to the console
 15 18 21 24
 20 24 28 32
 ```
-However, if the order of the inputs is reversed then the following is output to the console.
+However, if the order of the inputs is reversed then the following is output to the console instead.
 ```
-10 15 20 12
-12 18 24 14
-14 21 28 16
+10 15 20
+12 18 24
+14 21 28
+16 24 32
 ```
 
 **Implementation/Code:** This function is implemented as follows:

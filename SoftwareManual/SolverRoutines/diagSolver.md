@@ -8,7 +8,7 @@
 
 **Description/Purpose:** This function computes the solution to a square linear system of equations where the coefficient matrix is a diagonal matrix.
 
-**Input:** This function accepts a coefficient matrix, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as inputs. The 
+**Input:** This function accepts a coefficient matrix, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as inputs.
 
 **Output:** This function returns a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the solution to the linear system of equations.
 
@@ -36,7 +36,7 @@ outputs the following to the console
 ```
 0.25 0.4 0.5 0.5
 ```
-Note that any additional entries to the coefficient matrix will have the exact same output.
+Note that additional entries in the coefficient matrix will have the exact same output.
 
 **Implementation/Code:** This function is implemented as follows:
 
