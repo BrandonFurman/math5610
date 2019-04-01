@@ -6,11 +6,11 @@
 
 **Language:** C++
 
-**Description/Purpose:** This function computes the solution to a linear system of equation whose coefficient matrix is upper triangular.
+**Description/Purpose:** This function computes the solution to the linear system of equations A**x** = **b** where A is a upper triangular coefficient matrix, **b** is a vector of constant terms, and **x** is the solution vector.
 
-**Input:**
+**Input:** This function accepts an upper triangular coefficient matrix, A, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as inputs. Both inputs are passed by reference.
 
-**Output:**
+**Output:** This function returns a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the solution to the linear system of equations.
 
 **Usage/Example:**
 ```cpp
