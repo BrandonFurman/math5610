@@ -6,7 +6,7 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** This function solves the square linear system of equations A**x** = **b** using Gaussian Elimination. To do so it utilizes the [matRowReduction](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/matRowReduction) and [augMatBackSub](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/backSub) functions.
 
 **Input:**
 

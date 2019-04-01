@@ -6,11 +6,11 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** This function performs elementary row operations on a given matrix to take the matrix to row echelon form. The resulting matrix is upper triangular through the rows. 
 
-**Input:**
+**Input:** This functions accepts a matrix of arbitrary dimension in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object. The matrix does not need to be square. This input is passed by reference.
 
-**Output:**
+**Output:** This functions returns a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object that is the row echelon form of the input matrix. This matrix will always have the same dimensions as the input.
 
 **Usage/Example:**
 
