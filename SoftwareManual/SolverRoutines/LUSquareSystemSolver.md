@@ -12,7 +12,7 @@
 
 **Output:** This function returns the solution to the system of equations, **x**. The function will throw an exception if any of the diagonal entries of the coefficient matrix are zero.
 
-**Usage/Example:** Usage is straightforward. The follo
+**Usage/Example:** Usage is straightforward. The following code
 ```cpp
 int m, n, l;
 m = 3; n = 3; l = 3;
@@ -35,7 +35,7 @@ for (int i = 0; i < l; i++) {
 	std::cout << sol(i) << " ";
 }
 ```
-which outputs the following to the console:
+outputs the following to the console:
 ```
 1.61538 2.38462 0.923077
 ```
