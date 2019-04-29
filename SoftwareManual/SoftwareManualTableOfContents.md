@@ -19,12 +19,18 @@
 * [absErrVecTwoNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecTwoNorm)
 * [absErrVecInfNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecInfNorm)
 
+### Matrix Generators
+
+* [emptyMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/emptyMat)
+* [randMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randMat)
+* [randSymMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randSymMat)
+* [randDiagDomMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randDiagDomMat)
+* [randSymDiagDomMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randSymDiagDomMat)
+* [randSymPosDefMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randSymPosDefMat)
+* [hilbertMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/hilbertMat)
 
 ### Matrix Routines
 
-* [emptyMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/emptyMat)
-* [randMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randMat)
-* [randSymMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randSymMat)
 * [scaleMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/scaleMat)
 * [addMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/addMat)
 * [subMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/subMat)
@@ -32,7 +38,28 @@
 * [oneNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/oneNormMat)
 * [infNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/infNormMat)
 
+## Matrix Decompositions
+
+* [CholeskyDecomp](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/CholeskyDecomp)
+* [LUDecomp](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/LUDecomp)
+* [QRDecomp_CGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_CGS)
+* [QRDecomp_HOUSE](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_HOUSE)
+* [QRDecomp_MGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_MGS)
+
 ### Solver Routines
+* [augMatBackSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/augMatBackSub)
+* [backSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/backSub)
+* [conjGrad](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/conjGrad)
+* [diagSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/diagSolver)
+* [forwardSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/forwardSub)
+* [gaussSeidelSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/gaussSeidelSolver)
+* [jacobiSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/jacobiSolver)
+* [LUSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/LUSquareSystemSolver)
+* [matRowReduction](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/matRowReduction)
+* [normalEqSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/normalEqSolver)
+* [slowSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/slowSquareSystemSolver)
+* [SquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/SquareSystemSolver)
+* [steepestDescent](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/steepestDescent)
 
 ### Other Routines
 

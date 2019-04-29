@@ -1,12 +1,12 @@
 # Software Manual
 
-**Routine Name:** LUFactorizer
+**Routine Name:** LUDecomp
 
 **Author:** Brandon Furman
 
 **Language:** C++
 
-**Description/Purpose:** This function returns the LU Factorization of a square matrix.
+**Description/Purpose:** This function returns the LU Decomposition of a square matrix.
 
 **Input:**
 
@@ -17,13 +17,13 @@
 **Implementation/Code:**
 
 ```cpp
-array2D LUFactorizer(array2D A) {
+array2D LUDecomp(array2D A) {
 
 	int m = A.getRows();
 	int n = A.getCols();
 
 	if (m != n) {
-		throw "LUFactorizer: Matrix not square";
+		throw "LUDecomp: Matrix not square";
 	}
 
 	double factor = 0.0;
@@ -31,7 +31,7 @@ array2D LUFactorizer(array2D A) {
 	for (int k = 0; k < m - 1; k++) {
 		for (int i = k + 1; i < m; i++) {
 
-			if (A(k, k) == 0.0) throw "LUFactorizer: Division by zero";
+			if (A(k, k) == 0.0) throw "LUDecomp: Division by zero";
 
 			factor = A(i, k) / A(k, k);
 
