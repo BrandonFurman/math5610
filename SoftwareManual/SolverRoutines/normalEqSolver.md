@@ -6,18 +6,18 @@
 
 **Language:** C++
 
-**Description/Purpose:**
+**Description/Purpose:** The purpose of this function is to calculate a solution to the normal equations. The normal equations find the vector **x** that minimizes the equation **b** - A**x**. This type of equation often shows up in data fitting.
 
-**Input:**
+**Input:** This function receives a *m* x *n* coefficient matrix, A, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as input. The coefficient matrix should have more rows than columns.
 
-**Output:**
+**Output:** This function returns a vector, **x**, in the form of an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object. This **x** minimizes the equation **b** - A**x**.
 
 **Usage/Example:**
 
 **Implementation/Code:**
 
 ```cpp
-array1D normalEqSolver(array2D &A, array1D b) {
+array1D normalEqSolver(array2D& A, array1D b) {
 
 	int m = A.getRows();
 	int n = A.getCols();
