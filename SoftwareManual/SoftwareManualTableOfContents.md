@@ -19,7 +19,7 @@
 * [absErrVecTwoNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecTwoNorm)
 * [absErrVecInfNorm](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/absErrVecInfNorm)
 
-### Matrix Generators
+## Matrix Generators
 
 * [emptyMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/emptyMat)
 * [randMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randMat)
