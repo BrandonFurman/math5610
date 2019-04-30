@@ -1,44 +1,41 @@
-The purpose of this page is to evaluate...
+The purpose of this page is to evaluate the performance of the Steepest Descent and Conjugate Gradient Methods when evalutating a Hilbert coefficient matrix. A tolerance of 0.00001 is used and the maximum number of iterations is restricted to 100,000. 
+
+For a Hilbert matrix of size 4, both the Steepest Descent and Conjugate Gradient methods converge to the correct solution. It took the Steepest Descent method 57,607 iterations to converge to the correct solution whereas the Conjugate Gradient method converged in only 4. The results are shown below.
 
 |        n = 4       |    x1    |    x2   |    x3    |    x4   |
 |:------------------:|:--------:|:-------:|:--------:|:-------:|
 |  Steepest Descent  | -3.99826 | 59.9804 | -179.953 | 139.969 |
 | Conjugate Gradient |       -4 |      60 |     -180 |     140 |
 
+For a Hilbert matrix of size 8, the Steepest Descent method was unable to converge to a correct solution within 100,000 iterations. The Conjugate Gradient Method converged to the correct solution in 18 iterations. The output of both functions is shown below.
+
+|        n = 8       |    x1   |    x2    |    x3   |    x4   |    x5    |    x6    |    x7    |    x8   |
+|:------------------:|:-------:|:--------:|:-------:|:-------:|:--------:|:--------:|:--------:|:-------:|
+|  Steepest Descent  | 3.11703 | -42.0967 | 62.1902 | 159.587 | -106.524 | -299.354 | -153.322 | 411.224 |
+| Conjugate Gradient |      -8 |      504 |   -7560 |   46200 |  -138600 |   216216 |  -168168 |   51480 |
+
+For Hilbert matrices of size 16 and 32, both methods fail to converge to a solution.
+
+
 ```cpp
-int maxIter = 10000;
+int m = 4;
 double tol = 0.00001;
-int m = 5000;
+int maxIter = 100000;
 
 array2D A;
-array1D b, x, x1, x2, x3;
+array1D b, x0, x1, x2;
 
-A = randDiagDomMat(m);
-for (int i = 0; i < m; i++) A(i, i) += m;
+A = HilbertMat(m);
+b = oneVec(m);
+x0 = randVec(m);
 
-b = randVec(m);
-x = randVec(m);
+x1 = steepestDescent(A, b, x0, tol, maxIter);
 
-std::clock_t time_req;
+for (int i = 0; i < m; i++) std::cout << x1(i) << " ";
 
-time_req = std::clock();
-for (int i = 0; i < 100; i++) {
-	x1 = gaussSeidelSolver(A, b, x, tol, maxIter);
-}
-time_req = clock() - time_req;
+std::cout << std::endl;
 
+x2 = conjGrad(A, b, x0, tol, maxIter);
 
-std::cout << "CPU time: "
-	<< std::fixed << std::setprecision(10) << (double)time_req / (CLOCKS_PER_SEC*100.0) << " seconds" << std::endl;
-
-	
-time_req = std::clock();
-for (int i = 0; i < 100000; i++) {
-	x2 = SquareSystemSolver(A, b);
-}
-time_req = clock() - time_req;
-
-
-std::cout << "CPU Time: "
-	<< std::fixed << std::setprecision(10) << (double)time_req / (CLOCKS_PER_SEC*100000.0) << " seconds" << std::endl;
+for (int i = 0; i < m; i++) std::cout << x2(i) << " ";
 ```
