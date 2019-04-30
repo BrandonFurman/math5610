@@ -6,7 +6,7 @@
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to solve the square linear system of equations A**x** = **b** using the Conjugate Gradient Method. The Conjugate Gradient Method is an iterative method that can be used when the coefficient matrix is symmetric and positive-definite.
+**Description/Purpose:** The purpose of this function is to solve the square linear system of equations A**x** = **b** using the Conjugate Gradient Algorithm. The Conjugate Gradient Algorithm is an iterative method that can be used when the coefficient matrix is symmetric and positive-definite. The Conjugate Gradient Algorithm is a modification of the [steepestDescent](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/steepestDescent) function that tends to converge substantially faster.
 
 **Input:** This function requires the following 5 items as inputs:
 
@@ -53,7 +53,7 @@ outputs the following to console:
 ```
 3 2 1
 ```
-which is the exact solution to the stated problem.
+which is the exact solution to the stated problem, and the same answer that was found when using the Steepest Descent Algorithm. The primary difference between the two algorithms is that the Conjugate Gradient algorithm converged to a solution in 4 iterations, whereas the Steepest Descent Algorithm took 23 iterations. This means the Conjugate Gradient Algorithm is substantially faster.
 
 **Implementation/Code:** The conjGrad() function is implemented as follows:
 
