@@ -50,12 +50,10 @@ array1D gaussSeidelSolver(array2D& A, array1D& b, array1D x0, double tol, int ma
 			x1(i) = (1.0 / A(i, i))*(b(i) - sum);
 		}
 
-		
+		error = absErrVecTwoNorm(x1, x0);
 
 		x0 = x1;
 	}
-
-	//std::cout << "Gauss-Seidel converged in " << cntr << " iterations." << std::endl;
 
 	return x1;
 }

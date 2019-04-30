@@ -6,13 +6,13 @@
 
 **Language:** C++
 
-**Description/Purpose:** 
+**Description/Purpose:** The purpose of this function is to calculate the *QR* decomposition of a given square matrix *A*. It does so using the Classical Gram-Schmidt process.
 
-**Input:**
+**Input:** This function accepts a *n* x *n* square matrix, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object, as input.
 
-**Output:**
+**Output:** This function returns a *n* x 2*n* rectangular block matrix in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object. The first *n* x *n* block is the *Q* component of the factorization and the second *n* x *n* block is the *R* component of the factorization.
 
-**Usage/Example:**
+**Usage/Example:** The f ... 
 
 **Implementation/Code:**
 
@@ -23,7 +23,7 @@ array2D QRDecomp_CGS(array2D A) {
 	int n = A.getCols();
 
 	if (n != m) {
-		throw "GSOrtho: Matrix Not Square";
+		throw "QRDecomp_CGS: Matrix Not Square";
 	}
 
 	array2D QR;
