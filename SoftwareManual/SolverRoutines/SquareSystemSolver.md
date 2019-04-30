@@ -6,9 +6,9 @@
 
 **Language:** C++
 
-**Description/Purpose:** This function solves the square linear system of equations *A***x** = **b** using Gaussian Elimination. This is an inlined version of the slowSquareSystemSolver function. A speed comparison of these two functions can be found [here](https://brandonfurman.github.io/math5610/homework/homework5/SquareSystemSolverComparison).
+**Description/Purpose:** This function solves the square linear system of equations *A***x** = **b** using Gaussian Elimination. This is an inlined version of the [slowSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/slowSquareSystemSolver). A speed comparison of these two functions can be found [here](https://brandonfurman.github.io/math5610/homework/homework5/SquareSystemSolverComparison).
 
-**Input:** This function requires a coefficient matrix, *A*, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D). The coefficient matrix should have a nonzero entries for all of its diagonal elements. If there are zero entries, an exception will be thrown.
+**Input:** This function requires a coefficient matrix, *A*, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object. The coefficient matrix should have a nonzero entries for all of its diagonal elements. If there are zero entries, an exception will be thrown.
 
 **Output:** The function returns a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the solution to the linear system of equations.
 
