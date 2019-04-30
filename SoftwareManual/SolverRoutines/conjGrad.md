@@ -6,11 +6,11 @@
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to solve the square linear system of equations A**x** = **b** using the Conjugate Gradient method.
+**Description/Purpose:** The purpose of this function is to solve the square linear system of equations A**x** = **b** using the Conjugate Gradient Method. The Conjugate Gradient Method is an iterative method that can be used when the coefficient matrix is symmetric and positive-definite.
 
 **Input:** This function requires the following 5 items as inputs:
 
-- A symmetric positive definite coefficent matrix, *A*, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object.
+- A symmetric and positive-definite coefficent matrix, *A*, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object.
 - A vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object. 
 - A initial guess for the solution, **x0**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object.
 - A tolerance that specifies when to stop iterating in the form of a double precision number.
@@ -18,28 +18,33 @@
 
 **Output:** This function returns an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the solution to the square linear system of equations A**x** = **b**. 
 
-**Usage/Example:**
+**Usage/Example:** An example of the usage of this function can be found below for the problem where *A* = [[7,3,1],[3,10,2],[1,2,15]] and **b** = [28,31,22].
 ```cpp
 int m = 3;
-
-array2D A;
-array1D b, x;
 int maxIter = 1000;
 double tol = 0.000001;
 
+//Create the desired coefficient matrix.
+array2D A;
 A.allocateMem(m, m);
-b.allocateMem(m);
-x.allocateMem(m);
-
 A(0, 0) = 7; A(0, 1) = 3; A(0, 2) = 1;
 A(1, 0) = 3; A(1, 1) = 10; A(1, 2) = 2;
 A(2, 0) = 1; A(2, 1) = 2; A(2, 2) = 15;
 
+//Create the desired vector of constant terms
+array1D b;
+b.allocateMem(m);
 b(0) = 28; b(1) = 31; b(2) = 22;
+
+//Create an initial guess for the algorithm.
+array1D x;
+x.allocateMem(m);
 x(0) = 0; x(1) = 0; x(2) = 0;
 
+//Call the Conjugate Gradient algorithm.
 x = conjGrad(A, b, x, tol, maxIter);
 
+//Output the solution.
 for (int i = 0; i < m; i++) {
 	std::cout << x(i) << " ";
 }
@@ -50,7 +55,7 @@ outputs the following to console:
 ```
 which is the exact solution to the stated problem.
 
-**Implementation/Code:**
+**Implementation/Code:** The conjGrad() function is implemented as follows:
 
 ```cpp
 array1D conjGrad(array2D& A, array1D& b, array1D x, double tol, int maxIter) {
