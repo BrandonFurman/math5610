@@ -10,11 +10,11 @@
 
 **Input:** This function requires the following 5 items as inputs:
 
-	- A symmetric positive definite coefficent matrix, *A*, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object.
-	- A vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object. 
-	- A initial guess for the solution, **x0**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object.
-	- A tolerance that specifies when to stop iterating in the form of a double precision number.
-	- A limit to the number of iterations in the form of an integer. 
+- A symmetric positive definite coefficent matrix, *A*, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object.
+- A vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object. 
+- A initial guess for the solution, **x0**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object.
+- A tolerance that specifies when to stop iterating in the form of a double precision number.
+- A limit to the number of iterations in the form of an integer. 
 
 **Output:** This function returns an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object that is the solution to the square linear system of equations A**x** = **b**. 
 
