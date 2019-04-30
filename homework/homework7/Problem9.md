@@ -1,41 +1,54 @@
-The purpose of this page is to evaluate the performance of the Steepest Descent and Conjugate Gradient Methods when evalutating a Hilbert coefficient matrix. A tolerance of 0.00001 is used and the maximum number of iterations is restricted to 100,000. 
+The purpose of this page is to compare results on symmetric positive definite linear systems of equations using Jacobi Iteration and the Conjugate Gradient Method. A plot of CPU Time vs. Matrix Size and Residual Norm vs. Iterations is provided for these two algorithms below. In both cases a tolerance of 0.0001 is used.
 
-For a Hilbert matrix of size 4, both the Steepest Descent and Conjugate Gradient methods converge to the correct solution. It took the Steepest Descent method 57,607 iterations to converge to the correct solution whereas the Conjugate Gradient method converged in only 4. The results are shown below.
+![alt text](https://brandonfurman.github.io/math5610/homework/homework7/JacobiConjugateComparison1.png)
 
-|        n = 4       |    x1    |    x2   |    x3    |    x4   |
-|:------------------:|:--------:|:-------:|:--------:|:-------:|
-|  Steepest Descent  | -3.99826 | 59.9804 | -179.953 | 139.969 |
-| Conjugate Gradient |       -4 |      60 |     -180 |     140 |
-
-For a Hilbert matrix of size 8, the Steepest Descent method was unable to converge to a correct solution within 100,000 iterations. The Conjugate Gradient Method converged to the correct solution in 18 iterations. The output of both functions is shown below.
-
-|        n = 8       |  x1  |   x2   |   x3  |   x4   |    x5   |    x6   |    x7   |   x8   |
-|:------------------:|:----:|:------:|:-----:|:------:|:-------:|:-------:|:-------:|:------:|
-|  Steepest Descent  | 3.12 | -42.10 | 62.19 | 159.59 | -106.52 | -299.35 | -153.32 | 411.22 |
-| Conjugate Gradient |   -8 |    504 | -7560 |  46200 | -138600 |  216216 | -168168 |  51480 |
-
-For Hilbert matrices of size 16 and 32, both methods fail to converge to a solution. The reason these matrices fail to converge at large sizes is because their condition number is large.
-
+From this graph it can be seen that the Conjugate Gradient Method is more than an order of magnitude faster than Jacobi Iteration at every matrix size between *n* = 100 and *n* = 2000.
 
 ```cpp
-int m = 4;
-double tol = 0.00001;
-int maxIter = 100000;
+int N = 100;
+int maxIter = 10000;
+double tol = 1e-4;
 
-array2D A;
-array1D b, x0, x1, x2;
+for (int m = 100; m <= 2000; m += 100) {
 
-A = HilbertMat(m);
-b = oneVec(m);
-x0 = randVec(m);
+	std::cout << m << " ";
 
-x1 = steepestDescent(A, b, x0, tol, maxIter);
+	array2D A;
+	array1D b, x, x1, x2, x3;
 
-for (int i = 0; i < m; i++) std::cout << x1(i) << " ";
+	A = randSymDiagDomMat(m);
+	for (int i = 0; i < m; i++) A(i, i) *= 1.1;
 
-std::cout << std::endl;
+	b = oneVec(m);
+	b = scaleVec(m, b);
+	x = emptyVec(m);
 
-x2 = conjGrad(A, b, x0, tol, maxIter);
+	std::clock_t time_req;
 
-for (int i = 0; i < m; i++) std::cout << x2(i) << " ";
+	time_req = clock();
+	for (int i = 0; i < N; i++) {
+		x1 = jacobiSolver(A, b, x, tol, maxIter);
+	}
+	time_req = clock() - time_req;
+
+	std::cout << std::fixed << std::setprecision(10) << (double)time_req / (CLOCKS_PER_SEC*N) << " ";
+
+
+	time_req = clock();
+	for (int i = 0; i < N; i++) {
+		x2 = conjGrad(A, b, x, tol, maxIter);
+	}
+	time_req = clock() - time_req;
+
+	std::cout << std::fixed << std::setprecision(10) << (double)time_req / (CLOCKS_PER_SEC*N) << " ";
+
+	x3 = subVec(x1, x2);
+
+	double norm = twoNormVec(x3);
+
+	if (norm <= 0.01) {
+		std::cout << "Pass" << std::endl;
+	}
+		
+}
 ```
