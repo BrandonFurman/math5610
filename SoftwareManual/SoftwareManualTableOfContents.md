@@ -38,7 +38,7 @@
 * [oneNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/oneNormMat)
 * [infNormMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/infNormMat)
 
-## Matrix Decompositions
+### Matrix Decompositions
 
 * [CholeskyDecomp](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/CholeskyDecomp)
 * [LUDecomp](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/LUDecomp)
