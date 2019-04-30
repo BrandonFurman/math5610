@@ -55,7 +55,7 @@ outputs the following to console:
 ```
 which is the exact solution to the stated problem.
 
-**Implementation/Code:**
+**Implementation/Code:** The steepestDescent() function is implemented as follows:
 
 ```cpp
 array1D steepestDescent(array2D& A, array1D& b, array1D x0, double tol, int maxIter) {
