@@ -46,7 +46,7 @@ This code outputs the following to console:
 which is the unique **x** vector that minimizes the L2 norm of **b** - *A***x**
 
 
-**Implementation/Code:**
+**Implementation/Code:** The normalEqSolver() function is implemented as follows:
 
 ```cpp
 array1D normalEqSolver(array2D& A, array1D b) {
