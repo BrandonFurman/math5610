@@ -1,23 +1,7 @@
-The purpose of this page is to list some of the iterative methods for solving linear systems of equations. Methods can be broadly split into Stationary and Nonstationary methods. Examples of both methods are listed below.
+## Parallel Algorithms For Matrix-Matrix Multiplication
 
-## Stationary Iterative Methods
+It appears that most parallel algorithms for matrix-matrix multiplication are concerned with a memory bottleneck. A naive way to handle matrix multiplication would be to simply assign processor cores to different quadrants of the final matrix. Because entries in the product matrix are not reliant upon one another, this seems like it ought to work well enough. What this does not take into account is the fact that the processors will often be attempting to access the same blocks of memory simultaneously. This induces a memory bottleneck rather than a computational one. Hence, it seems most parallel algorithms for matrix-matrix multiplication are more interested in way to manage memory so as to minimize memory access overlap. Some parallel algorithms that employ more sophisticated methods of memory management are the Fox algorithm and the Cannon algorithm [Source](http://www.hpcc.unn.ru/mskurs/ENG/DOC/pp08.pdf).
 
-1. **Jacobi Method**
-	- "The Jacobi method is a method of solving a matrix equation on a matrix that has no zeros along its main diagonal. Each diagonal element is solved for, and an approximate value plugged in. The process is then iterated until it converges." [Source](http://mathworld.wolfram.com/JacobiMethod.html)
-2. **Weighted Jacobi Method**
-	- The Weighted Jacobi Method is the same as the Jacobi Method except with the iterator multiplied by some constant, typically 2/3. [Source](https://en.m.wikipedia.org/wiki/Jacobi_method#Weighted_Jacobi_method)
-3. **Gauss-Seidel Method**
-	- "The Gauss-Seidel method is a technique for solving the *n* equations of the linear system of equations *A***x** = **b** one at a time in sequence, and uses previously computed results as soon as they are available." [Source](http://mathworld.wolfram.com/Gauss-SeidelMethod.html)
-4. **Successive Over-Relaxation Method**
-	- "The successive overrelaxation method (SOR) is a method of solving a linear system of equations *A***x** = **b** derived by extrapolating the Gauss-Seidel method. This extrapolation takes the form of a weighted average between the previous iterate and the computed Gauss-Seidel iterate successively for each component." [Source](http://mathworld.wolfram.com/SuccessiveOverrelaxationMethod.html)
+## Parallel Algorithms for Matrix-Vector Multiplication
 
-## Nonstationary Iterative Methods
-
-1. **Steepest Descent**
-	- "An algorithm for finding the nearest local minimum of a function which presupposes that the gradient of the function can be computed. The method of steepest descent, also called the gradient descent method, starts at a point P_0 and, as many times as needed, moves from P_i to P_(i+1) by minimizing along the line extending from P_i in the direction the local downhill gradient." [Source](http://mathworld.wolfram.com/MethodofSteepestDescent.html)
-2. **Conjugate Gradient**
-	- "The conjugate gradient method is an algorithm for finding the nearest local minimum of a function of *n* variables which presupposes that the gradient of the function can be computed. It uses conjugate directions instead of the local gradient for going downhill. If the vicinity of the minimum has the shape of a long, narrow valley, the minimum is reached in far fewer steps than would be the case using the method of steepest descent." [Source](http://mathworld.wolfram.com/ConjugateGradientMethod.html)
-3. **Generalized Minimal Residual Method**
-	- "The generalized minimal residual method is designed to solve nonsymmetric linear systems. The most popular form of GMRES is based on a modified Gram-Schmidt orthonormalization procedure and uses restarts to control storage requirements." [Source](http://mathworld.wolfram.com/GeneralizedMinimalResidualMethod.html)
-4. **Biconjugate Gradient Method**
-	- "The conjugate gradient method is not suitable for nonsymmetric systems because the residual vectors cannot be made orthogonal with short recurrences. The generalized minimal residual method retains orthogonality of the residuals by using long recurrences, at the cost of a larger storage demand. The biconjugate gradient method (BCG) takes another approach, replacing the orthogonal sequence of residuals by two mutually orthogonal sequences, at the price of no longer providing a minimization." [Source](http://mathworld.wolfram.com/BiconjugateGradientMethod.html)
+The issues associated with matrix-vector multiplication are very similar to those with matrix-matrix multiplication. In the case of matrix-vector multiplication, however, they are less severe. This is due to there being less overlap between memory accesses. None of the algorithms seem to have specific names, but they can be found in the attached source. [Source](http://www.hpcc.unn.ru/mskurs/ENG/DOC/pp07.pdf)
