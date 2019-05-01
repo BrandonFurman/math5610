@@ -6,13 +6,45 @@
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to calculate a solution to the normal equations. The normal equations find the vector **x** that minimizes the equation **b** - A**x**. This type of equation often shows up in data fitting.
+**Description/Purpose:** The purpose of this function is to calculate a solution to the normal equations. The normal equations find the unique vector **x** that minimizes the L2 norm of **b** - *A***x**. This type of equation often shows up in data fitting.
 
-**Input:** This function receives a *m* x *n* coefficient matrix, A, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as input. The coefficient matrix should have more rows than columns.
+**Input:** This function receives a *m* x *n* coefficient matrix, A, in the form of an [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as input. The coefficient matrix should have more rows than columns. The function will throw an exception if the coefficient matrix has more columns than rows.
 
 **Output:** This function returns a vector, **x**, in the form of an [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object. This **x** minimizes the equation **b** - A**x**.
 
-**Usage/Example:**
+**Usage/Example:** Usage of this function is straightforward. Consider the problem of minimizing the L2 norm of **b** - *A***x** where *A* = [[1,0,1],[2,3,5],[5,3,-2],[3,5,4],[-1,6,3]] and **b** = [4,-2,5,-2,1]. The following code shows how this function can be used to accomplish this.
+```cpp
+int m = 5;
+int n = 3;
+
+//Create and populate a 5 x 3 matrix.
+array2D A;
+A.allocateMem(m, n);
+A(0, 0) = 1; A(0, 1) = 0; A(0, 2) = 1;
+A(1, 0) = 2; A(1, 1) = 3; A(1, 2) = 5;
+A(2, 0) = 5; A(2, 1) = 3; A(2, 2) = -2;
+A(3, 0) = 3; A(3, 1) = 5; A(3, 2) = 4;
+A(4, 0) = -1; A(4, 1) = 6; A(4, 2) = 3;
+
+//Create and populate a vector of constant terms.
+array1D b;
+b.allocateMem(m);
+b(0) = 4; b(1) = -2; b(2) = 5; b(3) = -2; b(4) = 1;
+
+//Find the x vector that minimizes the L2 norm of b - Ax.
+array1D x;
+x = normalEqSolver(A, b);
+
+for (int i = 0; i < n; i++) {
+	std::cout << x(i) << " ";
+}
+```
+This code outputs the following to console:
+```
+0.347226 0.399004 -0.785917
+```
+which is the unique **x** vector that minimizes the L2 norm of **b** - *A***x**
+
 
 **Implementation/Code:**
 
