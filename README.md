@@ -41,7 +41,7 @@
 7. Task 7 was to create a routine that returns the cross product of three vectors of length three. This routine is detailed in the [crossProduct](https://brandonfurman.github.io/math5610/SoftwareManual/VectorOperations/crossProduct) entry of the software manual.
 8. Task 8 was to create a routine that returns the product of two matrices with equal inner dimension. This routine is detailed in the [multMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/multMat) entry of the software manual.
 9. Task 9 was to create a routine that returns a diagonally dominant matrix that has real values in all entries of the matrix. This routine is detailed in the [randDiagDomMat] (https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randDiagDomMat) entry of the software manual.
-10.
+10. WIP
 
 ### Homework 4
 
@@ -54,8 +54,56 @@
 7. This method is detailed in the [matRowReduction](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/matRowReduction) entry of the software manual.
 8. This method is detailed in the [slowSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/slowSquareSystemSolver) entry of the software manual.
 9. This method is detailed in the [randSymDiagDomMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixOperations/randSymDiagDomMat) entry of the software manual.
-10.
+10. A discussion of parallel matrix-vector and matrix-matrix multiplication algorithms can be found [here](https://brandonfurman.github.io/math5610/homework/homework4/Problem10).
 
 ### Homework 5
 
-1. An inlined square system solver is detailed in the [SquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/matRowReduction) entry of the software manual. A comparison between this function and a non-inlined version of the same function is detailed [here]()
+1. An inlined square system solver is detailed in the [SquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/SquareSystemSolver) entry of the software manual. A comparison between this function and a non-inlined version of the same function is detailed [here](https://brandonfurman.github.io/math5610/homework/homework5/SquareSystemSolverComparison).
+2. This method is detailed in the [LUDecomp](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/LUDecomp) entry of the software manual.
+3. This method is detailed in the [LUSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/LUSquareSystemSolver) entry of the software manual.
+4. This method is detailed in the [randSymPosDefMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randSymPosDefMat) entry of the software manual.
+5. This method is detailed in the [CholeskyDecomp](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/CholeskyDecomp) entry of the software manual.
+6. This method is detailed in the [normalEqSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/normalEqSolver) entry of the software manual.
+7. This method is detailed in the [QRDecomp_CGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_CGS) entry of the software manual.
+8. A discussion on the performance of the Classical Gram-Schmidt process with respect to Hilbert matrices can be found [here](https://brandonfurman.github.io/math5610/homework/homework5/QRHilbert).
+9. This method is detailed in the [randDiagDomMat](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixGenerators/randDiagDomMat) entry of the software manual.
+10. A summary of the limitations of direct methods can be found [here](https://brandonfurman.github.io/math5610/homework/homework5/Problem10).
+
+### Homework 6
+
+1. This method is detailed in the [QRSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/QRSquareSystemSolver) entry of the software manual.
+2. This method is detailed in the [QRDecomp_MGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_MGS) entry of the software manual. A comparison between this function and the Classical Gram-Schmidt procedure can be found [here](https://brandonfurman.github.io/math5610/homework/homework6/QRHilbertMGS).
+3. WIP
+4. WIP
+5. WIP
+6. This method is detailed in the [jacobiSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/jacobiSolver) entry of the software manual. The second example shows that the function is capable of solving a system of 1000 equations in 1000 unknowns.
+7. This method is detailed in the [gaussSeidelSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/gaussSeidelSolver) entry of the software manual. The second example shows that the function is capable of solving a system of 1000 equations in 1000 unknowns.
+8. A comparison between this Jacobi algorithm and the Gauss-Seidel algorithm can be found [here](https://brandonfurman.github.io/math5610/homework/homework6/Problem8). This comparison shows how the number of iterations for the Jacobi and Gauss-Seidel algorithms to converge changes with matrix size.
+9. WIP
+10. WIP
+
+### Homework 7
+
+1. A comparison between Gaussian Elimination and Jacobi Iteration is given [here](https://brandonfurman.github.io/math5610/homework/homework7/Problem12).
+2. A comparison between Gaussian Elimination and the Gauss-Seidel algorithm is given on the same page as problem 1 ([here](https://brandonfurman.github.io/math5610/homework/homework7/Problem12)).
+3. This method is detailed in the [steepestDescent](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/steepestDescent) entry of the software manual.
+4. A discussion on the performance of the Steepest Descent Method for Hilbert matrices can be found [here](https://brandonfurman.github.io/math5610/homework/homework7/Problem46)
+5. This method is detailed in the [conjGrad](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/conjGrad) entry of the software manual.
+6. A discussion on the performance of the Conjugate Gradient Method for Hilbert matrices can be found [here](https://brandonfurman.github.io/math5610/homework/homework7/Problem46)
+7. A list of iterative methods to solve linear systems of equations can be found [here](https://brandonfurman.github.io/math5610/homework/homework7/Problem7).
+8. A list of preconditioning strategies for iterative methods can be found [here](https://brandonfurman.github.io/math5610/homework/homework7/Problem8).
+9. A comparison between Jacobi Iteration and the Conjugate Gradient Method can be found [here](https://brandonfurman.github.io/math5610/homework/homework7/Problem9).
+10. WIP
+
+### Homework 8 
+
+1. This method is detailed in the [powerMethod](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/powerMethod) entry of the software manual. This entry also includes an example for a Hilbert matrix of size 8.
+2. This method is detailed in the [inverseIteration](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/inverseIteration) entry of the software manual. This entry also includes an example for a Hilbert matrix of size 8.
+3. This method is detailed in the [condNumApprox](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/condNumApprox) entry of the software manual. This entry also includes an example for a Hilbert matrix of size 8.
+4. A graph of Condition Number vs. Hilbert Matrix size is available [here](https://brandonfurman.github.io/math5610/homework/homework8/Problem4).
+5. WIP
+6. This method is detailed in the [rayleighQuotient](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/rayleighQuotient) entry of the software manual. This entry also includes an example for a Hilbert matrix of size 8.
+7. WIP
+8. WIP
+9. WIP
+10. WIP
