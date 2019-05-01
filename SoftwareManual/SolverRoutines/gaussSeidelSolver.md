@@ -42,7 +42,7 @@ x.allocateMem(m);
 x(0) = 1.5; x(1) = -1.5; x(2) = 1;
 
 //Use Jacobi Iteration to solve the system Ax = b.
-x = jacobiSolver(A, b, x, tol, maxIter);
+x = gaussSeidelSolver(A, b, x, tol, maxIter);
 
 //Print the results.
 for (int i = 0; i < 3; i++) {
