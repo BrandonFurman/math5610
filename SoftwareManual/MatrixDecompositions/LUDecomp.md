@@ -6,11 +6,11 @@
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to compute the LU Decomposition of a square matrix.
+**Description/Purpose:** The purpose of this function is to compute the *LU* Decomposition of a square matrix, *A*. This means that *A* = *LU* where *L* is a lower triangular matrix and *U* is an upper triangular matrix.
 
 **Input:** This function accepts a square matrix, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object, as input.
 
-**Output:** This function returns a matrix of the same size as the input. The lower triangular part of this matrix is the *L* part of the factorization, and the upper triangular part of the returned matrix is the *U* part of the factorization.
+**Output:** This function returns a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object of the same size as the input. The lower triangular part of this matrix is the *L* part of the factorization, and the upper triangular part of the returned matrix is the *U* part of the factorization.
 
 **Usage/Example:** Usage of this function is relatively straightforward, but caution should be employed when parsing the ouput of this function. The following code
 ```cpp

@@ -6,7 +6,7 @@
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to solve the square linear system of equations A**x** = **b** using LU factorization.
+**Description/Purpose:** The purpose of this function is to solve the square linear system of equations *A***x** = **b** using *LU* factorization.
 
 **Input:** This function accepts an upper triangular coefficient matrix, A, in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object and a vector of constant terms, **b**, in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object as inputs. Both inputs are passed by reference.
 
@@ -50,7 +50,7 @@ catch (const char* msg) {
 ```
 which outputs
 ```
-LUSquareSystemSolver: Incompatible Sizes
+LUDecomp: Division by zero 
 ```
 
 
@@ -70,7 +70,7 @@ array1D LUSquareSystemSolver(array2D& A, array1D& b) {
 	array2D LU;
 	array1D y, x;
 
-	LU = LUFactorizer(A);
+	LU = LUDecomp(A);
 
 	y.allocateMem(m);
 
