@@ -1,4 +1,5 @@
 The purpose of this page is to test the Classical Gram-Schmidt process on various sizes of Hilbert matrices. The function being used for the following tests is [QRDecomp_CGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_CGS). For Hilbert matrices of size 4 we have the following:
+
 ```
 The QR decomposition for the Hilbert matrix of size 4 is:
  0.8381 -0.5226  0.1540 -0.0263
@@ -12,7 +13,9 @@ The product (Q^T)Q is:
  0.0000  0.0000  1.0000 -0.0000
 -0.0000 -0.0000 -0.0000  1.0000
 ```
+
 This data shows that *Q* is orthogonal to within 4 decimal places. For the Hilbert matrix of size 6 we have the following:
+
 ```
 The QR decomposition for the Hilbert matrix of size 6 is:
  0.8189 -0.5397  0.1893 -0.0482  0.0090 -0.0011
@@ -30,8 +33,9 @@ The product (Q^T)Q is:
  0.0000  0.0000  0.0000  0.0000  1.0000 -0.0002
 -0.0000 -0.0000 -0.0000 -0.0000 -0.0002  1.0000
 ```
+
 This data shows that *Q* is very nearly orthogonal. For the Hilbert matrix of size 8 we have the following:
-```
+
 ```
 The QR decomposition for the Hilbert matrix of size 8 is:
  0.8091 -0.5467  0.2064 -0.0605  0.0144 -0.0028  0.0003 -0.0003
@@ -53,7 +57,9 @@ The product (Q^T)Q is:
  0.0000 -0.0000  0.0000  0.0000  0.0003  0.0260  1.0000 -1.0000
 -0.0000  0.0000 -0.0000 -0.0000 -0.0004 -0.0340 -1.0000  1.0000
 ```
+
 This data shows that *Q* is not even close to being orthogonal. For the Hilbert matrix of size 10 we have the following:
+
 ```
 The QR decomposition for the Hilbert matrix of size 10 is:
  0.8033 -0.5503  0.2165 -0.0683  0.0183 -0.0042  0.0010  0.0010  0.0010  0.0009
@@ -79,9 +85,11 @@ The product (Q^T)Q is:
 -0.0000 -0.0000 -0.0000 -0.0000 -0.0007 -0.0350  0.9998  1.0000  1.0000  1.0000
 -0.0000 -0.0000 -0.0000 -0.0000 -0.0006 -0.0277  0.9996  0.9998  1.0000  1.0000
 ```
+
 Which once again shows that *Q* is not orthogonal. The reason the Classical Gram-Schmidt procedure fails to produce an orthogonal Q for larger Hilbert matrices is due to a build up of rounding errors. These rounding errors make the algorithm numerically unstable. A better algorithm to use is the Modified Gram-Schmidt Process ([QRDecomp_MGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_MGS)).
 
 This data was generated using the code below:
+
 ```cpp
 int m = 4;
 
