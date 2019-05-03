@@ -1,6 +1,6 @@
 # Software Manual
 
-**Routine Name:** powerMethod
+**Routine Name:** inverseIteration
 
 **Author:** Brandon Furman
 

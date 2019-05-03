@@ -1,12 +1,12 @@
 # Software Manual
 
-**Routine Name:** powerMethod
+**Routine Name:** rayleighQuotient
 
 **Author:** Brandon Furman
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to calculate the largest eigenvalue of a given square matrix using the Power Method.
+**Description/Purpose:** The purpose of this function is to calculate an eigenvalue for a given matrix using the Rayleigh Quotient algorithm.
 
 **Input:** This function requires the following 4 items as inputs:
 
@@ -15,13 +15,13 @@
 - A tolerance in the form of a double precision number. The function stops iterating when the L2 norm of *A***v** - e**v** is less than the tolerance.
 - An integer that limits the maximum number of iterations. 
 
-**Output:** This function returns a double precision number that is the largest eigenvalue of the given matrix.
+**Output:** This function returns a double precision number that is an eigenvalue of the given matrix. This eigenvalue is the one corresponding to the eigenvector closest to **v0**.
 
 **Usage/Example:** Usage of this function is straightforward. The following code finds the largest eigenvalue of a Hilbert matrix of size 8:
 ```cpp
-int m = 8;
-int maxIter = 10;
-double tol = 1e-4;
+int m = 3;
+int maxIter = 1000;
+double tol = 1e-8;
 
 //Create a Hilbert matrix.
 array2D A;
@@ -32,23 +32,25 @@ A = HilbertMat(m);
 //to the largest eigenvalue.
 array1D v0;
 v0 = oneVec(m);
+//v0 = scaleVec(-1.0 / sqrt(3.0), v0);
+v0(0) = 0.5; v0(1) = -0.5; v0(2) = 0.5;
 
 //Find the largest eigenvalue of A.
 double ev1 = 0.0;
-ev1 = powerMethod(A, v0, tol, maxIter);
+ev1 = rayleighQuotient(A, v0, tol, maxIter);
 
-std::cout << ev1;
+std::cout << ev1 << std::endl;
 ```
 This code outputs the following to console:
 ```
-1.69594
+0.00268734
 ```
-which can be easily verified as the largest eigenvalue of Hilbert Matrix of size 8.
+which is the third eigenvalue of the Hilbert matrix of size 3.
 
-**Implementation/Code:** The powerMethod() function is implemented as follows:
+**Implementation/Code:** The rayleighQuotient() function is implemented as follows:
 
 ```cpp
-double powerMethod(array2D& A, array1D v, double tol, int maxIter) {
+double rayleighQuotient(array2D& A, array1D v, double tol, int maxIter) {
 
 	int m = A.getRows();
 	int n = A.getCols();
@@ -57,6 +59,9 @@ double powerMethod(array2D& A, array1D v, double tol, int maxIter) {
 	if (m != n || m != l) {
 		throw "powerMethod: Incompatible Sizes";
 	}
+
+	array2D B;
+	B = A;
 
 	array1D vt;
 	vt.allocateMem(m);
@@ -68,24 +73,31 @@ double powerMethod(array2D& A, array1D v, double tol, int maxIter) {
 	double sum = 0.0;
 	double error = 10.0*tol;
 
+	//Calculate an initial guess for the eigenvalue.
+	ev = 0.0;
+	for (int i = 0; i < m; i++) {
+		sum = 0.0;
+		for (int j = 0; j < m; j++) {
+			sum += A(i, j)*v(j);
+		}
+		ev += v(i)*sum;
+	}
+	sum = 0.0;
+
 	while (error > tol && cntr < maxIter) {
 
 		cntr += 1;
 
-		//Calculate vt = Av_(k-1) and ||vt||.
-		norm = 0.0;
+		//Form B = A - evI
 		for (int i = 0; i < m; i++) {
-			sum = 0.0;
-			for (int j = 0; j < m; j++) {
-				sum += A(i, j)*v(j);
-			}
-			vt(i) = sum;
-			norm += sum * sum;
+			B(i, i) = A(i,i) - ev;
 		}
 
-		norm = sqrt(norm);
+		//Solve (B)vt = v_(k-1) for vt.
+		vt = SquareSystemSolver(B, v);
 
 		//Calculate v_k = vt / ||vt||
+		norm = twoNormVec(vt);
 		for (int i = 0; i < m; i++) {
 			v(i) = vt(i) / norm;
 		}
@@ -116,7 +128,12 @@ double powerMethod(array2D& A, array1D v, double tol, int maxIter) {
 		error = sqrt(error);
 	}
 
-	return ev;
+	if (cntr != maxIter) {
+		return ev;
+	}
+	else {
+		throw "rayleighQuotient: Failed to converge";
+	}
 }
 ```
 
