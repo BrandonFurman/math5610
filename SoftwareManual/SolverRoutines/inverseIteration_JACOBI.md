@@ -1,60 +1,66 @@
 # Software Manual
 
-**Routine Name:** rayleighQuotient
+**Routine Name:** inverseIteration
 
 **Author:** Brandon Furman
 
 **Language:** C++
 
-**Description/Purpose:** The purpose of this function is to calculate an eigenvalue for a given matrix using the Rayleigh Quotient algorithm.
+**Description/Purpose:** The purpose of this function is to calculate eigenvalues of a given square matrix using the Inverse Iteration Algorithm.
 
 **Input:** This function requires the following 4 items as inputs:
 
 - A square matrix *A* in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object.
-- An initial guess **v0** for the eigenvector corresponding to the largest eigenvalue in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object.
+- An initial guess **v0** for the eigenvector in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object.
+- A shift *a* in the form of a double precision number. This function will return the eigenvalue that is closest to *a*.
 - A tolerance in the form of a double precision number. The function stops iterating when the L2 norm of *A***v** - e**v** is less than the tolerance.
 - An integer that limits the maximum number of iterations. 
 
-**Output:** This function returns a double precision number that is an eigenvalue of the given matrix. This eigenvalue is the one corresponding to the eigenvector closest to **v0**.
+**Output:** This function returns a double precision number that is the eigenvalue of the given matrix that is closest to the shift.
 
-**Usage/Example:** Usage of this function is straightforward. The following code finds the largest eigenvalue of a Hilbert matrix of size 8:
+**Usage/Example:** Usage of this function is straightforward. The following code finds the second largest eigenvalue of a Hilbert matrix of size 8:
 ```cpp
-int m = 3;
+int m = 8;
 int maxIter = 1000;
-double tol = 1e-8;
+double tol = 1e-4;
+
+//The Inverse Iteration Algorithm returns
+//the eigenvalue closest to this number.
+double a = 0.2;
 
 //Create a Hilbert matrix.
 array2D A;
 A = HilbertMat(m);
 
 //Create an initial guess for
-//the eigenvector.
+//the eigenvector corresponding
+//to the largest eigenvalue.
 array1D v0;
 v0 = oneVec(m);
-v0(0) = 0.5; v0(1) = -0.5; v0(2) = 0.5;
 
+//Find the largest eigenvalue of A.
 double ev1 = 0.0;
-ev1 = rayleighQuotient(A, v0, tol, maxIter);
+ev1 = inverseIteration(A, v0, a, tol, maxIter);
 
 std::cout << ev1 << std::endl;
 ```
 This code outputs the following to console:
 ```
-0.00268734
+0.298125
 ```
-which is the third eigenvalue of the Hilbert matrix of size 3.
+which can be easily verified as the second largest eigenvalue of the Hilbert Matrix of size 8.
 
-**Implementation/Code:** The rayleighQuotient() function is implemented as follows:
+**Implementation/Code:** The inverseIteration() function is implemented as follows:
 
 ```cpp
-double rayleighQuotient(array2D& A, array1D v, double tol, int maxIter) {
+double inverseIteration(array2D& A, array1D v, double a, double tol, int maxIter) {
 
 	int m = A.getRows();
 	int n = A.getCols();
 	int l = v.getLength();
 
 	if (m != n || m != l) {
-		throw "rayleighQuotient: Incompatible Sizes";
+		throw "inverseIteration: Incompatible Sizes";
 	}
 
 	array2D B;
@@ -70,27 +76,16 @@ double rayleighQuotient(array2D& A, array1D v, double tol, int maxIter) {
 	double sum = 0.0;
 	double error = 10.0*tol;
 
-	//Calculate an initial guess for the eigenvalue.
-	ev = 0.0;
+	//Form B = A - aI
 	for (int i = 0; i < m; i++) {
-		sum = 0.0;
-		for (int j = 0; j < m; j++) {
-			sum += A(i, j)*v(j);
-		}
-		ev += v(i)*sum;
+		B(i, i) = A(i,i) - a;
 	}
-	sum = 0.0;
 
 	while (error > tol && cntr < maxIter) {
 
 		cntr += 1;
 
-		//Form B = A - evI
-		for (int i = 0; i < m; i++) {
-			B(i, i) = A(i,i) - ev;
-		}
-
-		//Solve (B)vt = v_(k-1) for vt.
+		//Solve (A - aI)vt = v_(k-1) for vt.
 		vt = SquareSystemSolver(B, v);
 
 		//Calculate v_k = vt / ||vt||
@@ -125,12 +120,7 @@ double rayleighQuotient(array2D& A, array1D v, double tol, int maxIter) {
 		error = sqrt(error);
 	}
 
-	if (cntr != maxIter) {
-		return ev;
-	}
-	else {
-		throw "rayleighQuotient: Failed to converge";
-	}
+	return ev;
 }
 ```
 

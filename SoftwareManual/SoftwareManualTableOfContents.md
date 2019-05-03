@@ -46,20 +46,29 @@
 * [QRDecomp_HOUSE](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_HOUSE)
 * [QRDecomp_MGS](https://brandonfurman.github.io/math5610/SoftwareManual/MatrixDecompositions/QRDecomp_MGS)
 
-### Solver Routines
-* [augMatBackSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/augMatBackSub)
-* [backSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/backSub)
-* [conjGrad](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/conjGrad)
+### Linear System Solver Routines
+
 * [diagSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/diagSolver)
+* [backSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/backSub)
+* [augMatBackSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/augMatBackSub)
 * [forwardSub](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/forwardSub)
-* [gaussSeidelSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/gaussSeidelSolver)
-* [jacobiSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/jacobiSolver)
-* [LUSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/LUSquareSystemSolver)
 * [matRowReduction](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/matRowReduction)
-* [normalEqSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/normalEqSolver)
 * [slowSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/slowSquareSystemSolver)
 * [SquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/SquareSystemSolver)
+* [LUSquareSystemSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/LUSquareSystemSolver)
+* [normalEqSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/normalEqSolver)
 * [steepestDescent](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/steepestDescent)
+* [conjGrad](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/conjGrad)
+* [jacobiSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/jacobiSolver)
+* [gaussSeidelSolver](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/gaussSeidelSolver)
+
+### Eigenvalue Routines
+
+* [powerMethod](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/powerMethod)
+* [inverseIteration](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/gaussSeidelSolver)
+* [rayleighQuotient](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/rayleighQuotient)
+* [condNumApprox](https://brandonfurman.github.io/math5610/SoftwareManual/SolverRoutines/condNumApprox)
+
 
 ### Other Routines
 

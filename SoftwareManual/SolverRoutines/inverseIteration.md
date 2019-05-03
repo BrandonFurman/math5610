@@ -8,7 +8,7 @@
 
 **Description/Purpose:** The purpose of this function is to calculate eigenvalues of a given square matrix using the Inverse Iteration Algorithm.
 
-**Input:** This function requires the following 4 items as inputs:
+**Input:** This function requires the following 5 items as inputs:
 
 - A square matrix *A* in the form of a [array2D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array2D) object.
 - An initial guess **v0** for the eigenvector in the form of a [array1D](https://brandonfurman.github.io/math5610/SoftwareManual/DataStructures/array1D) object.
@@ -60,7 +60,7 @@ double inverseIteration(array2D& A, array1D v, double a, double tol, int maxIter
 	int l = v.getLength();
 
 	if (m != n || m != l) {
-		throw "powerMethod: Incompatible Sizes";
+		throw "inverseIteration: Incompatible Sizes";
 	}
 
 	array2D B;
